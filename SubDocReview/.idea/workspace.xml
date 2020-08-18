@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="" />
+    <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bs/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy (2).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy (3).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/index4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/index5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/jquery-3.3.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1g1kNCIAYIiW3D6O1r1FQYmc44r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,11 +40,13 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Development\Git\FlaskExamples\SubDocReview" />
       <recent name="E:\Development\Python\FlaskCRUD-master\templates" />
     </key>
   </component>
