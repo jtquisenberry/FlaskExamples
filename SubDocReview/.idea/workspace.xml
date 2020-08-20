@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/models/view_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/controllers/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/controllers/document.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/templates/index5.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/templates/index5.html" afterDir="false" />
-    </list>
+    <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,19 +147,27 @@
       <option name="project" value="LOCAL" />
       <updated>1597886857116</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ViewModel, added sidenav button style">
+      <created>1597956808703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597956808703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="View base + index5 works with static data." />
-    <option name="LAST_COMMIT_MESSAGE" value="View base + index5 works with static data." />
+    <MESSAGE value="ViewModel, added sidenav button style" />
+    <option name="LAST_COMMIT_MESSAGE" value="ViewModel, added sidenav button style" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="627" y="119" key="CommitChangelistDialog2" timestamp="1597886848808">
+    <state x="627" y="119" key="CommitChangelistDialog2" timestamp="1597956802612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/-3840.-138.1280.680@0.0.1920.1040" timestamp="1597718129092" />
-    <state x="627" y="119" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886848808" />
+    <state x="627" y="119" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597956802612" />
     <state width="1299" height="564" key="DebuggerActiveHint" timestamp="1597887389737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,10 +219,10 @@
     <state x="223" y="76" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1597289681001" />
     <state x="297" y="92" key="SettingsEditor/0.0.1920.1040/-3840.-138.1280.680/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597703946270" />
     <state x="297" y="92" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597782199044" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597886883241">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1597956818907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886883241" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597956818907" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1597877049963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
