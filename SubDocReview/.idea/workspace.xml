@@ -2,17 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bs/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy (2).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy (3).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/index4 - Copy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/index4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/index5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/jquery-3.3.1.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bs/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/bs/aaa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/controllers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/controllers/document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/js/jquery-3.3.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/base-001.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/base-002.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/index5-001.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/templates/index5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SubDocReview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SubDocReview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/index4 - Copy (2).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/index4 - Copy (3).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/index4 - Copy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/index4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/index5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/jquery-3.3.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/snippets/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +80,45 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\project\bs" />
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\project\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\project\templates" />
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\project\static\js" />
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\project\static\css" />
+      <recent name="C:\Development\Git\FlaskExamples\SubDocReview\templates" />
       <recent name="E:\Development\Git\FlaskExamples\SubDocReview" />
-      <recent name="E:\Development\Python\FlaskCRUD-master\templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.runserver">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SubDocReview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Development\Git\FlaskExamples\SubDocReview\app\app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SubDocReview" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,7 +130,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="SCRIPT_NAME" value="C:\Development\Git\FlaskExamples\SubDocReview\app2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runserver" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SubDocReview" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runserver.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
+        <item itemvalue="Python.runserver" />
+        <item itemvalue="Python.app2 (1)" />
+        <item itemvalue="Python.app2" />
       </list>
     </recent_temporary>
   </component>
@@ -108,65 +198,149 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="119" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040/-3840.-138.1280.680@0.0.1920.1040" timestamp="1597718129092" />
-    <state width="757" height="466" key="DebuggerActiveHint" timestamp="1597377674922">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1299" height="564" key="DebuggerActiveHint" timestamp="1597872899826">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="757" height="466" key="DebuggerActiveHint/0.0.1440.860@0.0.1440.860" timestamp="1597377674922" />
-    <state width="1419" height="266" key="GridCell.Tab.0.bottom" timestamp="1597379711044">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1299" height="564" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597872899826" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1597886644085">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1597379711044" />
-    <state width="1419" height="266" key="GridCell.Tab.0.center" timestamp="1597379711044">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886644085" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1597886644085">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1597379711044" />
-    <state width="1419" height="266" key="GridCell.Tab.0.left" timestamp="1597379711044">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886644085" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1597886644085">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1597379711044" />
-    <state width="1419" height="266" key="GridCell.Tab.0.right" timestamp="1597379711044">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886644085" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1597886644085">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1597379711044" />
-    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1597379710974">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597886644085" />
+    <state width="1899" height="338" key="GridCell.Tab.1.bottom" timestamp="1597876977907">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1597379710974" />
-    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1597379710974">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597876977907" />
+    <state width="1899" height="338" key="GridCell.Tab.1.center" timestamp="1597876977906">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1597379710974" />
-    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1597379710974">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="338" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597876977906" />
+    <state width="1899" height="338" key="GridCell.Tab.1.left" timestamp="1597876977905">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1597379710974" />
-    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1597379710974">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1899" height="338" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597876977905" />
+    <state width="1899" height="338" key="GridCell.Tab.1.right" timestamp="1597876977907">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1419" height="266" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1597379710974" />
-    <state x="297" y="92" key="SettingsEditor" timestamp="1597703946270">
+    <state width="1899" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597876977907" />
+    <state x="297" y="92" key="SettingsEditor" timestamp="1597782199044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="223" y="76" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1597289681001" />
     <state x="297" y="92" key="SettingsEditor/0.0.1920.1040/-3840.-138.1280.680/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597703946270" />
+    <state x="297" y="92" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597782199044" />
+    <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1597877049963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="276" width="586" height="488" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1597877049963" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/app2.py</url>
+          <line>100</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app.py</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/app2.py</url>
+          <line>25</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/document.py</url>
+          <url>file://$PROJECT_DIR$/app2.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app2.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/bs/app2.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/bs/app2.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/bs/app2.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/bs/app2.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/bs/app2.py</url>
           <line>25</line>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/__init__.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/models/grocery.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/models/grocery.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/controllers/document.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/models/document.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/__init__.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/controllers/document.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/project/controllers/document.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
