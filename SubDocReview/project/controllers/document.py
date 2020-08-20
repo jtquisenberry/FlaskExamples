@@ -5,6 +5,7 @@ from flask import Flask, render_template, request, redirect, current_app, g
 from flask_wtf import FlaskForm
 from wtforms import StringField
 from wtforms.validators import DataRequired
+from models.view_model import ViewModel
 
 breakpoint001 = 0
 
@@ -81,7 +82,8 @@ def index():
 
     else:
         doc = app.config['doc']
-        return render_template('index5.html', groceries=doc)
+        view_modelxxx = ViewModel(document=doc, test=42)
+        return render_template('index5.html', view_model=view_modelxxx)
 
 
 
