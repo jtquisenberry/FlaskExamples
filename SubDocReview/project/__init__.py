@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.debug = True
 
 #Sqlite
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///document_segments.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 

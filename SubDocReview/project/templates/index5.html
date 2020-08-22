@@ -1,19 +1,47 @@
 {% extends 'base.html' %}
 {% block content %}
           <div style="margin-top:40px;">
+            <div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>DocumentID</th>
+                    <th>Review Calls</th>
+                    <th>Row Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{ view_model.document.document_id }}</td>
+                    <td>{{ view_model.document.pii_classes }}</td>
+                    <td>{{ view_model.row_number }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="list-group">
 
               {% for segment in view_model.document.segments %}
 
               <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                <h5 class="mb-1">Line #0</h5>
-                <input type="checkbox" id="check1">
-                <label class="" for="check3">Medical History |</label>
-                <input type="checkbox" id="check2">
-                <label class="" for="check4">Health Insurance</label>
+                <h5 class="mb-1">Document Segment #{{ segment.line_number }}</h5>
+                <input type="checkbox" id="BIRTH^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="BIRTH^{{ segment.document_id }}^{{ segment.line_number }}">Birth Certificate | </label>
+                <input type="checkbox" id="EMPAHI^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="EMPAHI^{{ segment.document_id }}^{{ segment.line_number }}">Employee Account Health Information | </label>
+                <input type="checkbox" id="FINAN^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="FINAN^{{ segment.document_id }}^{{ segment.line_number }}">Financial Account Number | </label>
+                <input type="checkbox" id="HEALI^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="HEALI^{{ segment.document_id }}^{{ segment.line_number }}">Health Information | </label>
+                <input type="checkbox" id="HEALINS^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="HEALINS^{{ segment.document_id }}^{{ segment.line_number }}">Health Insurance | </label>
+                <input type="checkbox" id="MEDHIST^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="MEDHIST^{{ segment.document_id }}^{{ segment.line_number }}">Medical History | </label>
+                <input type="checkbox" id="WRE^{{ segment.document_id }}^{{ segment.line_number }}">
+                <label class="" for="WRE^{{ segment.document_id }}^{{ segment.line_number }}">Work-Related Evaluation</label>
+
                 <p>Document ID: {{ segment.document_id }}</p>
                 <p class="mb-1">{{ segment.line }} </p>
-                <small>{{ segment.line_number }}</small>
 
               {% endfor %}
 

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+          <div style="margin-top:40px;">
+            <div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>DocumentID</th>
+                    <th>Review Calls</th>
+                    <th>Row Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{ view_model.document.document_id }}</td>
+                    <td>{{ view_model.document.pii_classes }}</td>
+                    <td>{{ view_model.row_number }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="list-group">
+
+              {% for segment in view_model.document.segments %}
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <h5 class="mb-1">Document Segment #{{ segment.line_number }}</h5>
+                <input type="checkbox" id="check1">
+                <label class="" for="check3">Medical History |</label>
+                <input type="checkbox" id="check2">
+                <label class="" for="check4">Health Insurance</label>
+                <p>Document ID: {{ segment.document_id }}</p>
+                <p class="mb-1">{{ segment.line }} </p>
+
+              {% endfor %}
+
+              </a>
+            </div>
+          </div>
+{% endblock content %}

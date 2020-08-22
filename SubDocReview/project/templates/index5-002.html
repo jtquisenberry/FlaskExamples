@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+          <div style="margin-top:40px;">
+            <div class="list-group">
+
+              {% for segment in view_model.document.segments %}
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <h5 class="mb-1">Line #0</h5>
+                <input type="checkbox" id="check1">
+                <label class="" for="check3">Medical History |</label>
+                <input type="checkbox" id="check2">
+                <label class="" for="check4">Health Insurance</label>
+                <p>Document ID: {{ segment.document_id }}</p>
+                <p class="mb-1">{{ segment.line }} </p>
+                <small>{{ segment.line_number }}</small>
+
+              {% endfor %}
+
+              </a>
+            </div>
+          </div>
+{% endblock content %}

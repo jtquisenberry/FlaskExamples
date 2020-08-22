@@ -16,7 +16,8 @@
     <!-- Custom styles for this template -->
     <!-- <link href="dashboard.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
-    <script src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
     <style type="text/css">
           /* CSS REQUIRED */
       .state-icon {
@@ -66,6 +67,7 @@
   </ul>
 </nav>
 -->
+
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#">&nbsp;Sub-Document Review&nbsp;</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -97,10 +99,12 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li>
         </ul>
+        <!--
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        -->
     </div>
 </nav>
 
@@ -108,51 +112,72 @@
     <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
+                {% block content2 %}
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">
 
-                            Side Nav <span class="sr-only">(current)</span>
+                            Review Panel <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
+                            <b>DocID:</b> {{ view_model.document.document_id }}
+                        </a>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="/{{ view_model.row_number }}">
 
-                            Link 1
+                            Next Document
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#" onclick="saveReviewCalls({{ view_model.row_number }})">
 
-                            Link 2
+                            Save Document
                         </a>
                     </li>
+                    -->
                     <li class="nav-item">
+                        <!--
                         <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-primary" onclick="console.log('5 + 6');">Next Document</button>
+                        -->
+                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-primary" onclick="location.href='/{{ view_model.row_number }}';">Next Document</button>
                     </li>
                     <li class="nav-item">
-                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-danger" onclick="console.log(5 + 6);">Save Document</button>
+                        <!--
+                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-danger" onclick="getCheckboxes();">Save Document</button>
+                        -->
+                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-danger" onclick="saveReviewCalls({{ view_model.row_number }});">Save Document</button>
                     </li>
+
                     <li class="nav-item">
-                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-dark" onclick="alert(5 + 6);">Alert</button>
+                        <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-dark" onclick="alert('Alert Test');">Alert Test</button>
                     </li>
                 </ul>
 
+                <hr>
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Side Nav Sub</span>
+                    <span>Notification Area</span>
                 </h6>
+                <div id="notification-area" style="padding-left:16px;padding-bottom:8px;margin-top:8px; margin-right:16px">
+                    <b>Notification Text</b>
+                </div>
+
                 <ul class="nav flex-column mb-2">
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-
                             Link 3
                         </a>
                     </li>
                     <li class="nav-item">
                         <button type="button" style="margin-left:16px;margin-bottom:8px;margin-top:8px; margin-right:16px" class="btn btn-close">Close</button>
                     </li>
+                    -->
                 </ul>
-
+            {% endblock content2 %}
             </div>
         </nav>
 

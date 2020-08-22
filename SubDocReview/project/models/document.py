@@ -65,6 +65,9 @@ class Document():
         for line in lines:
             ds = DocumentSegment(self.document_id, line_number, line)
             self.segments.append(ds)
+            line_number += 1
+
+        a = 1
 
 
 class DocumentSegment():
