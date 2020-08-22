@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from flask import Blueprint,request,json
-# from flask_pymongo import ObjectId
-# from ..app import mongo
+from flask_pymongo import ObjectId
+from ..app import mongo
 from flask import render_template
 from app.controllers.HomeController import homecontroller
 

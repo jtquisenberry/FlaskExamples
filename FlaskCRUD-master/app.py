@@ -33,19 +33,7 @@ def index():
 
     else:
         groceries = Grocery.query.order_by(Grocery.created_at).all()
-        # return render_template('index.html', groceries=groceries)
-
-        grocery1 = Grocery()
-        grocery2 = Grocery()
-        grocery1.id = 111
-        grocery1.name = 'name111'
-        grocery1.created_at = 'aaaa'
-        grocery2.id = 111
-        grocery2.name = 'name111'
-        grocery2.created_at = 'aaaa'
-
-
-        return render_template('index2.html', groceries=[grocery1, grocery2])
+        return render_template('index.html', groceries=groceries)
 
 
 @app.route('/delete/<int:id>')
@@ -79,4 +67,4 @@ def update(id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5555)
+    app.run(debug=True)
