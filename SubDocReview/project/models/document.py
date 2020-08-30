@@ -42,6 +42,8 @@ class Document():
         self.pii_classes = ''
         self.old_id = ''
         self.text = ''
+        self.word_counts_str = ''
+        self.character_counts_str = ''
         self.segments = list()
 
     def __repr__(self):
@@ -54,16 +56,20 @@ class Document():
 
     def get_document_from_row(self, row_index=0):
         row = self.df.loc[row_index]
-        self.document_id, self.pii_classes, self.old_id, self.text = row
+        self.document_id, self.pii_classes, self.old_id, self.text, self.word_counts_str, self.character_counts_str = row
         self._get_chunks(line_delimiter=(chr(0x20001)))  # 𠀁
 
     def _get_chunks(self, line_delimiter=chr(0x20001)):
         # lines = text.split('\n')
         lines = self.text.split(line_delimiter)
+        word_counts = self.word_counts_str.split(line_delimiter)
+        word_counts = [int(x) for x in word_counts]
+        character_counts = self.character_counts_str.split(line_delimiter)
+        character_counts = [int(x) for x in character_counts]
 
-        line_number = 0
-        for line in lines:
-            ds = DocumentSegment(self.document_id, line_number, line)
+        for line_number in range(0, len(lines)):
+            ds = DocumentSegment(document_id=self.document_id, line_number=line_number, line=lines[line_number],
+                                 word_count=word_counts[line_number], character_count=character_counts[line_number])
             self.segments.append(ds)
             line_number += 1
 
@@ -71,10 +77,12 @@ class Document():
 
 
 class DocumentSegment():
-    def __init__(self, document_id, line_number, line):
+    def __init__(self, document_id, line_number, line, word_count, character_count):
         self.document_id = document_id
         self.line_number = line_number
         self.line = line
+        self.word_count = word_count
+        self.character_count = character_count
 
     def __repr__(self):
         out_string = self.line[0:20]

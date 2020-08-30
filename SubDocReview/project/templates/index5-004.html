@@ -23,7 +23,7 @@
 
               {% for segment in view_model.document.segments %}
 
-              <div href="#" class="list-group-item flex-column align-items-start">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <h5 class="mb-1">Document Segment #{{ segment.line_number }}</h5>
                 <input type="checkbox" id="BIRTH^{{ segment.document_id }}^{{ segment.line_number }}">
                 <label class="" for="BIRTH^{{ segment.document_id }}^{{ segment.line_number }}">Birth Certificate | </label>
@@ -44,10 +44,9 @@
                 <p class="mb-1">{{ segment.line }} </p>
                 <small>Words: {{segment.word_count}}, Characters: {{segment.character_count}}</small>
 
-              </div>
               {% endfor %}
 
-
+              </a>
             </div>
           </div>
 {% endblock content %}
