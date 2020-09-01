@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4b908f1-0bc8-4cfd-8d69-56acb2dc0f0b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SubDocReview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SubDocReview.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/bs/index4.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/bs/index4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,6 +266,18 @@
     </state>
     <state width="1419" height="266" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1597379710974" />
     <state width="1899" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598064331666" />
+    <state x="2088" y="71" key="MergeDialog" timestamp="1599003031147">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2088" y="71" key="MergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599003031147" />
+    <state x="672" y="237" width="1103" height="744" key="MultipleFileMergeDialog" timestamp="1599003053433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="237" width="1103" height="744" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599003053433" />
+    <state x="747" y="234" key="RollbackChangesDialog" timestamp="1599002589736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="747" y="234" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599002589736" />
     <state x="-1623" y="92" key="SettingsEditor" timestamp="1598820620945">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -284,6 +295,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="276" width="586" height="488" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598051636738" />
+    <state x="628" y="386" key="git4idea.ui.GitUnstashDialog" timestamp="1599003054520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="386" key="git4idea.ui.GitUnstashDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599003054520" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
