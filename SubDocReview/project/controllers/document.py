@@ -194,3 +194,4 @@ def update(id):
         title = "Update Data"
         return render_template('update.html', title=title, grocery=grocery)
 
+
