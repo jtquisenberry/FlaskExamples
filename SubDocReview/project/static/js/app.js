@@ -39,3 +39,12 @@ function saveReviewCalls(row_number) {
     });
 
 }
+
+function getDocumentByNumber()
+{
+    var elem = document.getElementById('document_number');
+    var elem_text = elem.value;
+    elem_number = parseInt(elem_text, 10);
+    if (isNaN(elem_number)){elem_number = 0;}
+    return elem_number;
+}

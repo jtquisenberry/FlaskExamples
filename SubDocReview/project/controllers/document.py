@@ -19,36 +19,7 @@ from models.grocery import Grocery
 from models.document import Document
 from models.document_segment_for_db import DocumentSegmentForDb
 
-'''
-@app.route('/', methods=['GET', 'POST'])
-def indexa():
-    if request.method == 'POST':
-        name = request.form['name']
-        new_stuff = Grocery(name=name)
 
-        try:
-            db.session.add(new_stuff)
-            db.session.commit()
-            return redirect('/')
-        except:
-            return "There was a problem adding new stuff."
-
-    else:
-        groceries = Grocery.query.order_by(Grocery.created_at).all()
-        # return render_template('index.html', groceries=groceries)
-
-        grocery1 = Grocery()
-        grocery2 = Grocery()
-        grocery1.id = 111
-        grocery1.name = 'name111'
-        grocery1.created_at = 'aaaa'
-        grocery2.id = 111
-        grocery2.name = 'name111'
-        grocery2.created_at = 'aaaa'
-
-
-        return render_template('index2.html', groceries=[grocery1, grocery2])
-'''
 
 
 @app.route('/grocery', methods=['GET', 'POST'])
@@ -89,12 +60,22 @@ def index():
         return render_template('index5.html', view_model=view_modelxxx)
 
 
+@app.route('/next/<int:row_num>', methods=['GET', 'POST'])
+def index_next(row_num):
+    row_num += 1
+    view_model = index2(row_num=row_num, caller='index_next')
+    return render_template('index5.html', view_model=view_model)
 
 
+@app.route('/previous/<int:row_num>', methods=['GET', 'POST'])
+def index_previous(row_num):
+    row_num -= 1
+    view_model = index2(row_num=row_num, caller='index_previous')
+    return render_template('index5.html', view_model=view_model)
 
-@app.route('/<int:id>', methods=['GET', 'POST'])
-def index2(id):
-    # if request.method == 'POST':
+
+@app.route('/<int:row_num>', methods=['GET', 'POST'])
+def index2(row_num=0, caller=''):
     if request.method == 'POST':
 
         print(request.json)
@@ -164,11 +145,22 @@ def index2(id):
     else:  # GET
         dc = app.config['dc']
         doc = Document(dc)
-        doc.get_document_from_row(row_index=(id+1))
-        view_modelxxx = ViewModel(document=doc, test=42, row_number= id + 1)
+        if row_num >= len(dc.df):
+            row_num = 0
+        elif row_num < 0:
+            row_num = len(dc.df) - 1
+
+        doc.get_document_from_row(row_index=(row_num))
+        view_model = ViewModel(document=doc, test=42, row_number=row_num)
+
+        if not caller:
+            return render_template('index5.html', view_model=view_model)
+        else:
+            return view_model
+
         # view_modelxxx.row_number = id + 1
         # Add error handling for id + 1 == len(dc.df)
-        return render_template('index5.html', view_model=view_modelxxx)
+
 
 
 
@@ -201,4 +193,5 @@ def update(id):
     else:
         title = "Update Data"
         return render_template('update.html', title=title, grocery=grocery)
+
 
