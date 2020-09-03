@@ -20,7 +20,7 @@ with app.app_context():
 
     # Pickled documents data store.
     from models.document import Document, DocumentContainer, DocumentSegment
-    pickle_path = r'C:\corpora\allied_insurance\applied_insurance_documents.pkl'
+    pickle_path = r'C:\corpora\insurance_company\insurance_documents.pkl'
     dc = DocumentContainer()
     dc.get_documents_from_pickle(pickle_path)
     doc = Document(document_container=dc)
