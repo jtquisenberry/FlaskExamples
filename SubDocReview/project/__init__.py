@@ -19,7 +19,7 @@ with app.app_context():
     db = SQLAlchemy(app)
 
     # Pickled documents data store.
-    from models.document import Document, DocumentContainer, DocumentSegment
+    from .models.document import Document, DocumentContainer, DocumentSegment
     pickle_path = r'C:\corpora\insurance_company\insurance_documents.pkl'
     dc = DocumentContainer()
     dc.get_documents_from_pickle(pickle_path)
