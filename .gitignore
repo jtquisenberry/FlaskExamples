@@ -30,3 +30,9 @@ FlaskCRUD-master/.idea/workspace.xml
 SubDocReview/.idea/misc.xml
 SubDocReview/.idea/modules.xml
 SubDocReview/.idea/SubDocReview.iml
+official_tutorial/.idea/inspectionProfiles/profiles_settings.xml
+official_tutorial/.idea/misc.xml
+official_tutorial/.idea/modules.xml
+official_tutorial/.idea/official_tutorial.iml
+official_tutorial/.idea/vcs.xml
+*.pyc
